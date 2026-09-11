@@ -1,29 +1,24 @@
-# Yusman Alidzar - Portfolio & Bank Tugas
+# Yusman Alidzar Abdulah - Portofolio & Bank Tugas
 
 Web portofolio pribadi sekaligus hub pengumpulan tugas mata kuliah **Pengembangan Aplikasi Web**.
 
 ## Live
 https://yusmanalidzar.vercel.app
 
-## Stack
+## Stack Teknologi Saat Ini
 
-- **Vite** + **React** (JavaScript)
-- **Tailwind CSS v4**
-- **React Router** client-side routing
+- **HTML5 Murni (Semantik)**
+- **CSS Murni (Vanilla)** bergaya Wikipedia
 - **Vercel** hosting & CI/CD otomatis dari GitHub
 
 ## Struktur Halaman
 
-| Rute | Isi |
-|---|---|
-| `/` | Portofolio pribadi (bio, keahlian, proyek) |
-| `/tugas` | Katalog tugas matkul |
+| Berkas | Rute | Isi |
+|---|---|---|
+| `index.html` | `/` atau `/index.html` | Profil diri / Biodata (Tugas 2) |
+| `tugas.html` | `/tugas.html` | Katalog seluruh tugas matkul |
 
 ## Menjalankan Lokal
 
-```bash
-npm install
-npm run dev
-```
-
-Buka `http://localhost:5173`
+Karena web ini menggunakan HTML5 murni tanpa build tool, tidak perlu `npm install` atau proses build.
+Cukup buka file `index.html` atau `tugas.html` langsung di browser Anda (Klik dua kali / *Open with Chrome*).
