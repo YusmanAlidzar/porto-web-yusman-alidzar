@@ -1,0 +1,168 @@
+/* ── Google Fonts ─────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..900;1,8..60,300..900&family=Inter:wght@400;500;600&display=swap');
+
+/* ── Tailwind CSS v4 ──────────────────────────────────────── */
+@import "tailwindcss";
+
+/* ── Design Tokens (gaya Wikipedia) ─────────────────────────
+   Semua token didefinisikan di sini agar mudah diubah kelak.
+   Referensi: docs/design.md
+   ─────────────────────────────────────────────────────────── */
+@theme {
+  /* Warna */
+  --color-bg:         #FFFFFF;
+  --color-bg-subtle:  #F8F9FA;   /* abu sangat muda, khas sidebar Wikipedia */
+  --color-bg-infobox: #F8F9FA;
+  --color-text:       #202122;   /* hitam pekat gaya Wikipedia */
+  --color-text-muted: #54595D;
+  --color-border:     #A2A9B1;   /* garis pembatas abu muda */
+  --color-border-light: #EAECF0;
+  --color-link:       #0645AD;   /* biru ensiklopedia */
+  --color-link-visited: #0B0080;
+
+  /* Status badge (muted, sesuai design.md) */
+  --color-status-selesai-bg:    #D5F5E3;
+  --color-status-selesai-text:  #1E8449;
+  --color-status-berjalan-bg:   #FCF3CF;
+  --color-status-berjalan-text: #9A6B00;
+  --color-status-belum-bg:      #EAECF0;
+  --color-status-belum-text:    #54595D;
+
+  /* Tipografi */
+  --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  --font-sans:  'Inter', system-ui, sans-serif;
+
+  /* Spacing / layout */
+  --sidebar-width: 220px;
+  --content-max-width: 860px;
+}
+
+/* ── Base styles ─────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Konten artikel menggunakan font serif */
+.prose {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+/* ── Heading styles (Wikipedia-like) ───────────────────────
+   H1 dan H2 punya border-bottom tipis sebagai pemisah section.
+   ─────────────────────────────────────────────────────────── */
+.prose h1,
+.prose h2 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid var(--color-border-light);
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.prose h1 { font-size: 1.875rem; }
+.prose h2 { font-size: 1.375rem; }
+.prose h3 { font-size: 1.125rem; font-weight: 600; margin-top: 1.25em; }
+
+.prose p  { margin-top: 0; margin-bottom: 0.85em; }
+
+/* Link gaya Wikipedia */
+.prose a,
+a.wiki-link {
+  color: var(--color-link);
+  text-decoration: none;
+}
+.prose a:hover,
+a.wiki-link:hover {
+  text-decoration: underline;
+}
+.prose a:visited {
+  color: var(--color-link-visited);
+}
+
+/* ── Utility classes ────────────────────────────────────────
+   Class pembantu yang tidak ada di Tailwind tapi sering dipakai
+   di komponen layout Wikipedia.
+   ─────────────────────────────────────────────────────────── */
+
+/* Infobox: card khas Wikipedia */
+.infobox {
+  float: right;
+  clear: right;
+  margin: 0 0 1rem 1.5rem;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-bg-infobox);
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  width: 240px;
+}
+.infobox-title {
+  background-color: #CCE0FF;
+  font-weight: 600;
+  text-align: center;
+  padding: 0.4rem 0.6rem;
+  border-bottom: 1px solid var(--color-border);
+}
+.infobox-row {
+  display: flex;
+  padding: 0.3rem 0.6rem;
+  border-bottom: 1px solid var(--color-border-light);
+  gap: 0.5rem;
+}
+.infobox-label {
+  color: var(--color-text-muted);
+  min-width: 80px;
+  flex-shrink: 0;
+}
+
+/* Badge status */
+.badge {
+  display: inline-block;
+  padding: 0.15em 0.6em;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  white-space: nowrap;
+}
+.badge-selesai  { background: var(--color-status-selesai-bg);  color: var(--color-status-selesai-text); }
+.badge-berjalan { background: var(--color-status-berjalan-bg); color: var(--color-status-berjalan-text); }
+.badge-belum    { background: var(--color-status-belum-bg);    color: var(--color-status-belum-text); }
+
+/* Sidebar nav active state */
+.nav-item-active {
+  background-color: var(--color-bg-subtle);
+  border-left: 3px solid var(--color-link);
+  font-weight: 600;
+}
+
+/* ── Responsive: sidebar collapse ───────────────────────────
+   Di mobile (<768px) sidebar tersembunyi dan bisa di-toggle.
+   State open/close dikelola via class .sidebar-open di <body>
+   atau lewat state React.
+   ─────────────────────────────────────────────────────────── */
+@media (max-width: 767px) {
+  .infobox {
+    float: none;
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+}
