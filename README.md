@@ -1,7 +1,9 @@
 # Yusman Alidzar - Portfolio & Bank Tugas
 
 Web portofolio pribadi sekaligus hub pengumpulan tugas mata kuliah **Pengembangan Aplikasi Web**.
-**Live**: https://yusmanalidzar.vercel.app
+
+## Live
+https://yusmanalidzar.vercel.app
 
 ## Stack
 
