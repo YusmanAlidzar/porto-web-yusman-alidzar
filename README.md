@@ -7,8 +7,8 @@ https://yusmanalidzar.vercel.app
 
 ## Stack Teknologi Saat Ini
 
-- **HTML5 Murni (Semantik)**
-- **CSS Murni (Vanilla)** bergaya Wikipedia
+- **HTML5 (Semantik)**
+- **CSS (Vanilla)** bergaya Wikipedia
 - **Vercel** hosting & CI/CD otomatis dari GitHub
 
 ## Struktur Halaman
@@ -18,7 +18,4 @@ https://yusmanalidzar.vercel.app
 | `index.html` | `/` atau `/index.html` | Profil diri / Biodata (Tugas 2) |
 | `tugas.html` | `/tugas.html` | Katalog seluruh tugas matkul |
 
-## Menjalankan Lokal
-
-Karena web ini menggunakan HTML5 murni tanpa build tool, tidak perlu `npm install` atau proses build.
-Cukup buka file `index.html` atau `tugas.html` langsung di browser Anda (Klik dua kali / *Open with Chrome*).
+Oughey.
