@@ -3,7 +3,7 @@
 Web portofolio pribadi sekaligus hub pengumpulan tugas mata kuliah **Pengembangan Aplikasi Web**.
 
 ## Live
-https://yusmanalidzar.vercel.app
+https://yusmanalidzar.me
 
 ## Stack Teknologi Saat Ini
 
