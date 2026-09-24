@@ -4,7 +4,7 @@
 
 * **Nama Aplikasi**: Canva
 * **URL Lengkap**: `https://www.canva.com/id_id/`
-* **Portofolio Pengembang**: [https://yusmanalidzar.vercel.app](https://yusmanalidzar.vercel.app)
+* **Portofolio Pengembang**: [https://yusmanalidzar.me](https://yusmanalidzar.me)
 
 ### Dekonstruksi Anatomi URL
 
@@ -55,4 +55,4 @@
 
 * **Mata Kuliah**: Pengembangan Aplikasi Web
 * **Tautan Repositori GitHub**: [github.com/yusmanalidzar/](https://github.com/yusmanalidzar/)
-* **Portal Tugas**: [https://yusmanalidzar.vercel.app/tugas](https://yusmanalidzar.vercel.app/tugas)
+* **Portal Tugas**: [https://yusmanalidzar.me/tugas](https://yusmanalidzar.me/tugas)

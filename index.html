@@ -2,222 +2,161 @@
 <html lang="id">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yusman Alidzar Abdulah - Portofolio & Tugas-tugas Pengembangan Aplikasi Web</title>
 
-    <title>Yusman's Profile</title>
-    <meta name="description"
-        content="Halaman profil diri Yusman Alidzar Abdulah, Mahasiswa Teknik Informatika Semester 5 UIN Sunan Gunung Djati Bandung.">
+  <!-- Metadata Standar -->
+  <meta name="description"
+    content="Profil Yusman Alidzar Abdulah, Mahasiswa Teknik Informatika TA 2024 UIN Sunan Gunung Djati Bandung.">
 
-    <meta property="og:title" content="Yusman's Profile">
-    <meta property="og:description"
-        content="Halaman profil Yusman Alidzar Abdulah, Mahasiswa Teknik Informatika Semester 5 UIN Sunan Gunung Djati Bandung.">
-    <meta property="og:image" content="https://yusmanalidzar.me/assets/img/profile-2.png">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yusmanalidzar.me">
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Yusman Alidzar Abdulah - Portofolio & Tugas-tugas Pengembangan Aplikasi Web">
+  <meta property="og:description"
+    content="Profil Yusman Alidzar Abdulah, Mahasiswa Teknik Informatika TA 2024 UIN Sunan Gunung Djati Bandung.">
+  <meta property="og:image" content="./assets/img/profile-2.png">
+  <meta property="og:type" content="website">
 
-    <link rel="icon" type="image/png" href="./assets/img/logo.png">
+  <!-- Favicon & CSS -->
+  <link rel="icon" type="image/png" href="./assets/img/logo.png">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Yusman Alidzar Abdulah</h1>
-        <p>Mahasiswa Teknik Informatika - UIN Sunan Gunung Djati Bandung</p>
-    </header>
 
-    <nav>
-        <ul>
-            <li><a href="#profil">Profil</a></li>
-            <li><a href="#akademik">Data Akademik</a></li>
-            <li><a href="#tugas">Katalog Tugas</a></li>
-            <li><a href="#kontak">Kontak</a></li>
-        </ul>
+  <div class="layout">
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" aria-label="Main Navigation">
+      <div style="margin-bottom: 2rem;">
+        <img src="./assets/img/logo.png" alt="Logo" class="site-logo" style="margin-bottom: 0.5rem;">
+        <div style="font-family: var(--font-serif); font-weight: bold;">MENU UTAMA</div>
+      </div>
+
+      <div class="nav-section" style="font-family: var(--font-serif); font-weight: bold;">Halaman:</div>
+      <a href="./index.html" class="nav-link active">| Profil Diri</a>
+      <a href="./tugas.html" class="nav-link">| Katalog Tugas</a>
+
+      <div class="nav-section" style="font-family: var(--font-serif); font-weight: bold;">Contact:</div>
+      <a href="https://github.com/YusmanAlidzar" target="_blank" rel="noopener noreferrer" class="nav-link">GitHub</a>
+      <a href="https://www.instagram.com/yusman_alidzar/" target="_blank" rel="noopener noreferrer"
+        class="nav-link">Instagram</a>
     </nav>
 
-    <main>
-        <section id="profil">
-            <h2>My Profile</h2>
-            <img src="./assets/img/profile-2.png" alt="Foto Profil Yusman Alidzar Abdulah" width="200">
-            <br>
-            <br>
-            <table border="1">
-                <caption>Personal Data</caption>
-                <tbody>
-                    <tr>
-                        <th scope="row" align="center">Nama Lengkap</th>
-                        <td>Yusman Alidzar Abdulah</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" align="center">Institusi</th>
-                        <td>UIN Sunan Gunung Djati Bandung</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" align="center">Fakultas</th>
-                        <td>Sains dan Teknologi</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" align="center">Jurusan</th>
-                        <td>Teknik Informatika</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" align="center">Angkatan</th>
-                        <td>2024</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" align="center">Semester</th>
-                        <td>5 (Kelas D)</td>
-                    </tr>
-                </tbody>
-            </table>
+    <!-- Main Content -->
+    <main class="main-content">
 
-            <p>
-                Saya adalah mahasiswa Teknik Informatika TA 2024 di UIN Sunan Gunung Djati Bandung. Halaman ini dibuat
-                sebagai tugas mata kuliah Pengembangan Aplikasi Web dan sekaligus berfungsi sebagai portofolio pribadi.
-            </p>
+      <header>
+        <a href="./index.html" class="site-title">
+          <img src="./assets/img/logo.png" alt="Logo BMO" class="site-logo">
+          YUSMAN ALIDZAR ABDULAH
+        </a>
+      </header>
+
+      <article>
+        <h1>About Me</h1>
+
+        <section>
+          <!-- Infobox (Foto & Biodata Singkat) -->
+          <aside class="infobox">
+            <div class="infobox-title">Yusman Alidzar Abdulah</div>
+            <img src="./assets/img/profile-2.png" alt="Foto Profil Yusman Alidzar Abdulah">
+            <div class="infobox-row">
+              <span class="infobox-label">Nama</span>
+              <span>Yusman Alidzar Abdulah</span>
+            </div>
+            <div class="infobox-row">
+              <span class="infobox-label">Institusi</span>
+              <span>UIN Sunan Gunung Djati Bandung</span>
+            </div>
+            <div class="infobox-row">
+              <span class="infobox-label">Fakultas</span>
+              <span>Sains dan Teknologi</span>
+            </div>
+            <div class="infobox-row">
+              <span class="infobox-label">Jurusan</span>
+              <span>Teknik Informatika</span>
+            </div>
+          </aside>
+
+          <p>
+            <strong>Yusman Alidzar Abdulah</strong> adalah Mahasiswa Teknik Informatika TA 2024 UIN Sunan Gunung Djati
+            Bandung.
+            Halaman ini berfungsi sebagai portofolio pribadi sekaligus kumpulan tugas untuk mata kuliah
+            Pengembangan Aplikasi Web.
+          </p>
         </section>
 
-        <section id="akademik">
-            <h2>Data Akademik</h2>
+        <section>
+          <h2>Data Akademik</h2>
+          <h3>Jadwal Mata Kuliah (Semester 5 Kelas D)</h3>
+          <p>Berikut adalah daftar mata kuliah yang diambil pada semester ini, masing-masing berbobot <strong>3
+              SKS</strong>, dengan total beban <strong>21 SKS</strong>.</p>
 
-            <h3>Jadwal Mata Kuliah Semester 5 (Kelas D)</h3>
-            <p>
-                Berikut daftar 7 mata kuliah yang diambil pada semester ini, masing-masing berbobot <strong>3
-                    SKS</strong> (total <strong>21 SKS</strong>).
-            </p>
-
-            <table border="1">
-                <caption>Jadwal Mata Kuliah Semester 5 Kelas D</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">No.</th>
-                        <th scope="col">Mata Kuliah</th>
-                        <th scope="col">Hari</th>
-                        <th scope="col">Waktu</th>
-                        <th scope="col">Ruangan</th>
-                        <th scope="col">Dosen Pengampu</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Manajemen Basis Data</td>
-                        <td>Senin</td>
-                        <td>12:40 - 15:10</td>
-                        <td>R.4.12</td>
-                        <td>Wildan Budiawan Zulfikar S.T., M.Kom.</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Manajemen Proyek Perangkat Lunak</td>
-                        <td>Senin</td>
-                        <td>15:30 - 18:00</td>
-                        <td>R.4.01</td>
-                        <td>Agung Wahana S.E., M.T.</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Pengembangan Aplikasi Mobile</td>
-                        <td>Selasa</td>
-                        <td>15:30 - 18:00</td>
-                        <td>R.4.01</td>
-                        <td>H. Aldy Rialdy Atmadja M.T.</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Jaringan Komputer</td>
-                        <td>Rabu</td>
-                        <td>07:00 - 09:30</td>
-                        <td>R.4.11</td>
-                        <td>Cecep Nurul Alam M.T.</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Interaksi Manusia dan Komputer</td>
-                        <td>Kamis</td>
-                        <td>07:00 - 09:30</td>
-                        <td>R.4.01</td>
-                        <td>Dr. Cepy Slamet S.T., M.Kom.</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>Pengembangan Aplikasi Web</td>
-                        <td>Jumat</td>
-                        <td>07:00 - 09:30</td>
-                        <td>Gedung R.3.9</td>
-                        <td>Muhammad Deden Firdaus ST, M.Kom.</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>Inteligensia Buatan</td>
-                        <td>Jumat</td>
-                        <td>12:40 - 15:10</td>
-                        <td>R.4.09</td>
-                        <td>Jumadi ST., M.Cs.</td>
-                    </tr>
-                </tbody>
-            </table>
+          <table>
+            <thead>
+              <tr>
+                <th>Mata Kuliah</th>
+                <th>Hari & Waktu</th>
+                <th>Ruangan</th>
+                <th>Dosen Pengampu</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Manajemen Basis Data</td>
+                <td>Senin, 12:40 - 15:10</td>
+                <td>R.4.12</td>
+                <td>Wildan Budiawan Zulfikar S.T., M.Kom.</td>
+              </tr>
+              <tr>
+                <td>Manajemen Proyek Perangkat Lunak</td>
+                <td>Senin, 15:30 - 18:00</td>
+                <td>R.4.01</td>
+                <td>Agung Wahana S.E., M.T.</td>
+              </tr>
+              <tr>
+                <td>Pengembangan Aplikasi Mobile</td>
+                <td>Selasa, 15:30 - 18:00</td>
+                <td>R.4.01</td>
+                <td>H. Aldy Rialdy Atmadja M.T.</td>
+              </tr>
+              <tr>
+                <td>Jaringan Komputer</td>
+                <td>Rabu, 07:00 - 09:30</td>
+                <td>R.4.11</td>
+                <td>Cecep Nurul Alam M.T.</td>
+              </tr>
+              <tr>
+                <td>Interaksi Manusia dan Komputer</td>
+                <td>Kamis, 07:00 - 09:30</td>
+                <td>R.4.01</td>
+                <td>Dr. Cepy Slamet S.T., M.Kom.</td>
+              </tr>
+              <tr>
+                <td>Pengembangan Aplikasi Web</td>
+                <td>Jumat, 07:00 - 09:30</td>
+                <td>Gedung R.3.9</td>
+                <td>Muhammad Deden Firdaus ST, M.Kom.</td>
+              </tr>
+              <tr>
+                <td>Inteligensia Buatan</td>
+                <td>Jumat, 12:40 - 15:10</td>
+                <td>R.4.09</td>
+                <td>Jumadi ST., M.Cs.</td>
+              </tr>
+            </tbody>
+          </table>
         </section>
 
-        <section id="tugas">
-            <h2>Daftar Tugas</h2>
-            <p>Berikut adalah daftar tugas untuk mata kuliah Pengembangan Aplikasi Web yang telah dikerjakan dan
-                didokumentasikan.</p>
+      </article>
 
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Tugas</th>
-                        <th>Status</th>
-                        <th>Start Date</th>
-                        <th>Due Date</th>
-                        <th>Cut Off Date</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <strong>Tugas 1: Upload Domain</strong><br>
-                            Order domain website yang akan dijadikan sebagai penugasan selama perkuliahan
-                            Pengembangan Aplikasi
-                            Website satu semester ini.
-                            <br>
-                            Link Web: <a href="https://yusmanalidzar.me">yusmanalidzar.me</a>
-                        </td>
-                        <td>Selesai</td>
-                        <td>10 Sep 2026 01:00 WIB</td>
-                        <td>17 Sep 2026 23:00 WIB</td>
-                        <td>10 Jan 2027 23:00 WIB</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <strong>Tugas 2: Membuat Halaman Profil Diri dengan HTML5</strong><br>
-                            Buat 1 halaman profil diri menggunakan HTML5 dengan ketentuan pada <a
-                                href="https://lms.uinsgd.ac.id/">LMS E-Knows UIN SGD</a>
-                        </td>
-                        <td>Selesai</td>
-                        <td>11 Sep 2026 01:00 WIB</td>
-                        <td>18 Sep 2026 23:00 WIB</td>
-                        <td>11 Jan 2027 23:00 WIB</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+      <footer>
+        <p style="font-size: 0.75rem;">2026 © Yusman Alidzar Abdulah | Portofolio & Tugas-tugas Pengembangan Aplikasi
+          Web</p>
+      </footer>
 
-        <section id="kontak">
-            <h2>Kontak</h2>
-            <p>Online Profile: <a href="https://github.com/YusmanAlidzar">GitHub</a>
-                | <a href="https://www.instagram.com/yusman_alidzar/">Instagram</a>
-            </p>
-        </section>
     </main>
-
-    <footer>
-        <p>
-            © 2026 Yusman Alidzar Abdulah -
-            Tugas Mata Kuliah Pengembangan Aplikasi Web,
-            Teknik Informatika UIN Sunan Gunung Djati Bandung.
-        </p>
-    </footer>
+  </div>
 </body>
 
 </html>
